@@ -1,0 +1,11 @@
+node {
+  stage('install dependencies') {
+  sh "
+  pwd
+  pip3.10 install google-cloud-pubsub
+  pip3.10 install google-cloud-storage
+  pip3.10 install google-api-core
+  pip3.10 install google-cloud-bigquery
+  pip3.10 install pybase64
+  """
+  }
